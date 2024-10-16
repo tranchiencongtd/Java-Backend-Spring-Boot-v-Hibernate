@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AppicationPropertiesApplication {
 
-	@Value("${cong.ten}")
+	@Value("${env.ten}")
 	private String ten;
 	public static void main(String[] args) {
 		SpringApplication.run(AppicationPropertiesApplication.class, args);
@@ -19,5 +19,10 @@ public class AppicationPropertiesApplication {
 	@GetMapping(value = "/")
 	public String index() {
 		return "Hello world!" + ten;
+	}
+
+	@GetMapping(value = "/test")
+	public String test() {
+		return "Hello world!" + ten + "2";
 	}
 }
