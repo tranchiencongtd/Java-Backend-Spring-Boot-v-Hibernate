@@ -6,6 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class NotificationController {
+
+    /* Field Injection */
+    /* Not recommend to use */
+    @Autowired
     private IMessage email;
 
 //    @Autowired
@@ -13,10 +17,10 @@ public class NotificationController {
 //        this.email = emailService;
 //    }
 //
-    @Autowired
-    public void setEmail(EmailService email) {
-        this.email = email;
-    }
+//    @Autowired
+//    public void setEmail(EmailService email) {
+//        this.email = email;
+//    }
 
 
 
