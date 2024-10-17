@@ -1,4 +1,4 @@
-package demo;
+package dev.congtc;
 
 import org.springframework.stereotype.Component;
 
