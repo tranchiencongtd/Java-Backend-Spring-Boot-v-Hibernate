@@ -16,11 +16,13 @@ public class NotificationController {
 //    public NotificationController(EmailService emailService) {
 //        this.email = emailService;
 //    }
-//
-//    @Autowired
-//    public void setEmail(EmailService email) {
-//        this.email = email;
-//    }
+
+
+    /* Inject after create intanse NoticicationController */
+    @Autowired
+    public void setEmail(EmailService email) {
+        this.email = email;
+    }
 
 
 
